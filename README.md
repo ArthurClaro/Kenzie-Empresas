@@ -21,4 +21,6 @@ Tecnologias utilizadas: HTML, CSS, Javascript ES6, Fetch API e tokenização com
 - Código Base: [Kenzie Empresas - GitHub](https://github.com/ArthurClaro/Kenzie-Empresas)
 - Documentação da API: [Kenzie Empresas API - GitHub](https://github.com/gstvcampos/kenzie-empresas-API)
 - Figma: [Kenzie Empresas - Figma](https://www.figma.com/file/EEEdGd0gL5iLzaspW8DPXE/Kenzie-Empresas-Oficial)
-- 🎬 : 
+- 🎬 : [Kenzie Empresas - Vídeo ](https://www.linkedin.com/posts/arthur-claro-dev_javascript-desenvolvedor-frontend-activity-7100086680673525760--cYC?utm_source=share&utm_medium=member_desktop)
+
+![Captura de tela 2023-08-23 090452](https://github.com/ArthurClaro/Kenzie-Empresas/assets/124170421/1744caa7-d06e-4017-914b-ba2a165a9f4e)
