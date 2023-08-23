@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 9px;
+    height: 213px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #00F;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--grey-4, #E9ECEF);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 140px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    align-content: center;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+header div p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fa-circle {
+    color: blue;
+}
+
+.replace_home {
+    width: 142px;
+    height: 48px;
+    flex-shrink: 0;
+    border: 1px solid #00F;
+    color: #00F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.replace_log {
+    width: 142px;
+    height: 48px;
+    flex-shrink: 0;
+    background: #00F;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    background: url(../images/Rectangle\ 7.png);
+    width: 100%;
+    height: 944px;
+}
+
+.register {
+    margin: 143px 467px;
+    width: 506px;
+    height: 489px;
+    display: flex;
+    flex-direction: column;
+    padding: 39px 42px;
+    background: rgba(255, 255, 255, 0.95);
+    gap: 13px;
+}
+
+.register h2 {
+    margin-top: 20px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.register input {
+    width: 422px;
+    height: 52px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.register_go{
+    width: 422px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background: #00F;
+}
+.replace_return{
+    width: 422px;
+    height: 48px;
+    color: #00F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid #00F;
+}

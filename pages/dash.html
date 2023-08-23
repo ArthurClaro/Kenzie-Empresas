@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/dash.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <title>Dashboard Kenzie Empresas</title>
+</head>
+
+<body>
+
+    <!-- Modal Depart -->
+
+    <dialog id="modalCreate">
+        <div class="create">
+            <button class="create_TopRight--close">X</button>
+            <h2>Criar Departamento</h2>
+            <input class="create_name" type="text" placeholder="Nome do departamento">
+            <input class="create_descrpt" type="text" placeholder="Descrição">
+            <select name="" required="true" id="create_select">
+                <option value="">Selecionar Empresa</option>
+            </select>
+            <button class="create_go">Criar</button>
+        </div>
+    </dialog>
+
+    <dialog id="modalDel">
+        <div class="del">
+            <button class="del_closeTopRight">X</button>
+            <h2>Realmente deseja remover o Departamento ${} e demitir seus funcionários ?</h2>
+            <button class="del_go">Remover</button>
+        </div>
+    </dialog>
+
+    <dialog id="modalEditDepartment">
+        <div class="editDp">
+            <button class="editDp_TopRightClose">X</button>
+            <h2>Editar Departamento</h2>
+            <textarea class="editDp_description" name="" id="" cols="30" rows="10"></textarea>
+            <button class="editDp_go">Salvar</button>
+        </div>
+    </dialog>
+
+    <dialog id="modalShow">
+        <div class="show">
+            <button class="show_closeTopRight">X</button>
+            <article class="show_article">
+                <h2>Nome do departamento</h2>
+
+                <p class="show_article_descrp">Descrição do departamento</p>
+                <p class="show_article_comp">Empresa pertencente</p>
+
+                <div class="show_article_div">
+                    <select name="" required="true" id="show_user_select">
+                        <!-- <option value="">Selecionar usuário</option> -->
+                    </select>
+
+                    <button class="show_article_div_contat">Contratar</button>
+                </div>
+
+                <p class="shoe_error">Selecione um usuário...</p>
+
+                <section>
+
+                </section>
+            </article>
+
+        </div>
+    </dialog>
+
+    <!-- //////////////////// USER -->
+
+    <dialog id="modalClose">
+        <div class="close">
+            <p class="close_TopRight">X</p>
+            <h3 class="close_user"></h3>
+            <button class="close_go">Remover</button>
+        </div>
+    </dialog>
+
+    <dialog id="modalEdit">
+        <div class="edit">
+            <button class="edit_close">X</button>
+            <h2>Editar Usuário</h2>
+            <input class="edit_text" type="text" placeholder="Nome">
+            <input class="edit_email" type="email" placeholder="E-mail">
+            <button class="edit_go">Salvar</button>
+        </div>
+    </dialog>
+
+    <!-- /////////////////////////////////////////////////// -->
+
+    <header>
+        <div>
+            <i class="fa-solid fa-circle"></i>
+            <p>Dashboard - Kenzie Empresas</p>
+        </div>
+        <button class="exit">Logout</button>
+    </header>
+
+    <main>
+
+        <form>
+            <select name="plano" required="true" id="plano">
+                <option value="">Selecionar Empresa</option>
+            </select>
+            <span class="focus"></span>
+        </form>
+
+        <section class="departments">
+            <div class="departments_top">
+                <h3>Departamentos</h3>
+                <button class="departments_top--openModalCreate">
+                    <i class="fa-solid fa-plus"></i>
+                    Criar</button>
+            </div>
+            <article class="departments_container">
+
+            </article>
+        </section>
+
+        <section class="departments user">
+            <h3>Usuários cadastrados</h3>
+
+            <article class="user_container">
+
+            </article>
+        </section>
+
+    </main>
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../scripts/dash.js"></script>
+
+</html>
